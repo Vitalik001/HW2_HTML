@@ -3,50 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        /* background-color: aqua; */
+        background-image: url("images/header.png");
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+      }
+
+      .logo{
+        font: Poppins;
+        color: white;
+        width: 120px;
+        cursor: pointer;
+        font-size: 60px;
+      }
+      .nav-bar{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-bar ul li{
+        list-style: none;
+        display: inline;
+        margin: 0 20px;
+      
+      }
+
+      .nav-bar ul li a{
+        text-decoration: none;
+        color: white;
+        font: Poppins;
+        font-size: 20px;
+        margin: 0 10px;
+      }
+
+      .nav-bar ul li button{
+        background-color: white;
+        height: 40px;
+        width: 100px;
+        color: blue;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+      .banner{
+        color: white;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        transform: translateY(-50%);
+        top: 50%;
+      }
+      .banner-header{
+        font-size: 70px;
+        margin-top: 80px;
+        padding-inline: 250px;
+      }
+      .banner-text{
+        margin-top: 30px;
+        font-size: 30px;
+        padding-inline: 300px;
+        line-height: 50px;
+      }
+    </style>
 </head>
 <body>
-    <img class = "backgroud-img" src="images/header.png" alt = "Background">
-    <header>
-      <nav class = "header-nav">
-          <a class= "logo-link" href="#">Treloo</a>
-          <a class="header-link" href="#">Review</a>
-          <a class="header-link" href="#">Tips</a>
-          <a class="header-link" href="#">Alerts</a>
-          <a class="header-link" href="#">Blog</a>
-          <button class="blog">Blog</button>
-      </nav>
-    </header>
-    <div class="Banner">
+  <div class="header">
+      <div class = "nav-bar">
+          <p class="logo">Trello</p>
+          <ul>
+              <li><a href="#">Review</a></li>
+              <li><a href="#">Tips</a></li>
+              <li><a href="#">Alerts</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><button>Blog</button></li>
+          </ul>
+      </div>
+    <div class="banner">
       <h1 class= "banner-header">
         Discover Your Life, Travel Where You Want
       </h1>
-      <p class="Banner text">
+      <p class="banner-text">
         Would you explore natur paradise in the world, let’s find the best destination in world with us.
       </p>
     </div>
-    <div class="flight-hotel">
-      <button class="flight/hotel"> &#9992 Flight</button>
-      <button class="flight/hotel"> &#xf594 Hotel</button>
-      <div class="destivation">
-        <label for="Leaving from">Leaving from</label>
-        <input class="input" type="search" placeholder="From">
-        <img src="images/Airplane Mode On (1).png">
-        <label for="Going to">Going to</label>
-        <input class="input" type = "search" placeholder="To">
-      </div>
-      <div class="Date">
-        <label for="Leave">Leave &#9992</label>
-        <input type="date" id="start" name="trip-start"
-       value="2018-07-22"
-       min="2018-01-01" max="2018-12-31">
-       <img src="images/Planner.png">
-       <label for="Return">Return &#9992</label>
-       <input type="date" id="start" name="trip-start"
-       value="2018-07-22"
-       min="2018-01-01" max="2018-12-31">
-      </div>
-      <button> &#x1F50D</button>
+  </div>
+  <div class="flight-hotel">
+    <button class="flight/hotel"> &#9992 Flight</button>
+    <button class="flight/hotel"> &#xf594 Hotel</button>
+    <div class="destivation">
+      <label for="Leaving from">Leaving from</label>
+      <input class="input" type="search" placeholder="From">
+      <img src="images/Airplane Mode On (1).png">
+      <label for="Going to">Going to</label>
+      <input class="input" type = "search" placeholder="To">
     </div>
+    <div class="Date">
+      <label for="Leave">Leave &#9992</label>
+      <input type="date" id="start" name="trip-start"
+      value="2018-07-22"
+      min="2018-01-01" max="2018-12-31">
+      <img src="images/Planner.png">
+      <label for="Return">Return &#9992</label>
+      <input type="date" id="start" name="trip-start"
+      value="2018-07-22"
+      min="2018-01-01" max="2018-12-31">
+    </div>
+    <button> &#x1F50D</button>
+  </div>
     <div class="upcomming-offers">
       <h1>Special Upcoming Offers</h1>
       <div class = "type">
