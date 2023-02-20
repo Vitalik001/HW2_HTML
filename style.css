@@ -1,0 +1,93 @@
+
+* {
+margin: 0;
+padding: 0;
+}
+.header {
+/* background-color: aqua; */
+background-image: url("images/header.png");
+background-size: cover;
+height: 100vh;
+width: 100%;
+}
+
+.logo{
+font: Poppins;
+color: white;
+width: 120px;
+cursor: pointer;
+font-size: 60px;
+}
+.nav-bar{
+width: 85%;
+margin: auto;
+padding: 35px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.nav-bar ul li{
+list-style: none;
+display: inline;
+margin: 0 20px;
+
+}
+
+.nav-bar ul li a{
+text-decoration: none;
+color: white;
+font: Poppins;
+font-size: 20px;
+margin: 0 10px;
+}
+
+.nav-bar ul li button{
+background-color: white;
+height: 40px;
+width: 100px;
+color: blue;
+border: none;
+border-radius: 5px;
+font-size: 20px;
+}
+.banner{
+color: white;
+width: 100%;
+position: absolute;
+text-align: center;
+transform: translateY(-50%);
+top: 50%;
+}
+.banner-header{
+font-size: 70px;
+margin-top: 80px;
+padding-inline: 250px;
+}
+.banner-text{
+margin-top: 30px;
+font-size: 30px;
+padding-inline: 300px;
+line-height: 50px;
+}
+
+.trip-info{
+position: absolute;
+top: 95%;
+background-color: white;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.buttons{
+display: inline-block;
+position: absolute;
+top: 85%;
+background-color: red;
+margin-left: 10%;
+border-radius: 5px;
+padding-inline: 20px;
+padding-top: 20px;
+}
+.buttons button{
+
+}
